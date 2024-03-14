@@ -1,4 +1,4 @@
-let principle =4000;
+// let principle =4000;
 // let interest = 3;
 // let months=12;
 // document.write(principle*interest*months);
@@ -59,9 +59,10 @@ let principle =4000;
 
 
 
-// function add()
-// let int1=parseInt(prompt("enter the first number"));
-// let int=parseInt(promt("enter the second number "));
-// add=(int1+int2);
-// document.write(add);
-// add();
+function add(){
+let int1=parseInt(prompt("enter the first number"));
+let int=parseInt(promt("enter the second number "));
+add=(int1+int2);
+document.write(add);
+add();
+}

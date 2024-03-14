@@ -1,0 +1,30 @@
+img{
+    margin-top: 100px;
+    margin-left: 500px;
+    height: 200px;
+    width: 200px;
+}
+#trolly {
+    height: 500px;
+    width: 100%;
+    /* border: 2px solid black; */
+
+}
+#trolly i{
+    margin-left: 100px;
+    font-size:55px ;
+    margin-top: 25px;
+}
+button{
+    margin-top: 25px;
+    height: 100px;
+    width: 100px;
+    background-color:black;
+    color: aliceblue;
+    font-size: 55px;
+    /* padding: 15px; */
+    margin-left:100px;
+}
+#btn{
+    
+}
