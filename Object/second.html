@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        raj={
+            name:"Rajan",
+            location:"parsauni",
+            marks:91,
+            raj1:{
+                roll:52032,
+                roll_code:1900420,
+                total_marks:360,
+                raj2:{
+                    sir_name:"kumar",
+                    caste:"sudi",
+                    qualification:{
+                        martric:360,
+                        inter:335,
+                        college:8.0,
+                        personal:{
+                            father:"Harishchandra_mahto",
+                            mother_name:"Gayatri_devi",
+                            brother_name:"Rajaram_kumar",
+                            sister_name:"Hemanti_kumari",
+                        }
+                    }
+                }
+            }
+        }
+        console.log(raj.name);
+        console.log(raj.raj1.total_marks);
+        console.log(raj.raj1.raj2.caste);
+        console.log(raj.raj1.raj2.qualification.college);
+        console.log(raj.raj1.raj2.qualification.personal.father);
+        console.log(raj.raj1.raj2.qualification.personal.mother_name);
+        console.log(raj.raj1.raj2.qualification.personal.brother_name);
+        console.log(raj.raj1.raj2.qualification.personal.sister_name);
+    </script>
+</body>
+</html>

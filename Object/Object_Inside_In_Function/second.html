@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--======================== print only keys========================= -->
+    <script>
+        let ob={
+             naam:"Rajan kunar",
+             age:21,
+             raj:function()
+             {
+                console.log(this.naam + " " + this.age)
+             }
+        }
+// =====================for print the keys ===========================
+        // let k = Object.keys(ob)
+        // console.log(k[0])
+        // console.log(k[1])
+
+// ==========for print the value=======================================
+        // let v=Object.values(ob)
+        // console.log(v)
+//=============================== for loop==============================
+for(let v in ob)
+{
+    console.log(v)
+}
+    </script>
+</body>
+</html>

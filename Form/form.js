@@ -7,7 +7,7 @@ let contact = document.getElementById('contact').value;
 let pass = document.getElementById('pass').value;
 let cpass = document.getElementById('cpass').value;
 
-    if(Name=="")
+    if(Name==" ")
     {
         alert("please fill ur name ")
         document.getElementById("Name").focus();
@@ -24,13 +24,13 @@ let cpass = document.getElementById('cpass').value;
         alert("please enter  only number");
         return false;
     }
-    else if(pass="")
+    else if(pass=" ")
     {
         alert("please fill your password")
         document.getElementById("pass").focus();
         return false;
     }
-    else if(cpass=="")
+    else if(cpass==" ")
     {
         alert("please fill confirm password")
         document.getElementById("cpass").focus();
