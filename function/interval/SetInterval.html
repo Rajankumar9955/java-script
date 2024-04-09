@@ -6,12 +6,21 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
+    <!-- <script>
         setInterval(()=>{
             let a = new Date ();
             let b= a.toLocaleTimeString();
             console.log(b)
         },1000)
+    </script> -->
+    <script>
+      setInterval(()=>{
+         let a = new Date();
+         let b=a.toLocaleTimeString();
+         let c=a.toDateString()
+         console.log(c)
+         console.log(b)
+      },1000)
     </script>
 </body>
 </html>
