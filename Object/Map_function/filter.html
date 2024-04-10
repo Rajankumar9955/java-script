@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let emp =[
+            {
+             namee:"Rajan kumar",
+             age:21,
+             statuss:"single",
+            },
+            {
+                namee:"Suraj kumar",
+                age:21,
+                statuss:"mingle",
+            },
+            {
+                namee:"Bittu kumar",
+                age:25,
+                statuss:"single",
+            },
+            {
+                namee:"Hariom kumar",
+                age:22,
+                statuss:"mingle",
+            }
+        ]
+        let m=emp.filter((t)=>{return t.age>22 && t.age<=25});
+        console.log(m);
+    </script>
+</body>
+</html>

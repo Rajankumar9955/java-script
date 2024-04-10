@@ -6,24 +6,22 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 id="result"></h1>
-    <button onclick="fun()">Even</button>
-     <script>
-        let b=parseInt(prompt("Enter the number please"))
-        let a=document.getElementById("result")
-        
-        function fun()
-        {
-            if(b%2==0)
-            {
-                
-            }
-            
+    
+    <button onclick="obj.fun1()">even</button>
+    <script>
+let obj = {
+    fun1:function(){
+        let a = parseInt(prompt("enter any no"));
+        if(a%2==0){
+            console.log(a," is even no")
         }
-        fun1()
-        {
-           
+        else{
+            console.log(a,"is odd no");
         }
-     </script>
+    }
+}
+    </script>
+       
+
 </body>
 </html>

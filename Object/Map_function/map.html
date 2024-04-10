@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ========for use of data fetching  -->
+    <!-- =======================use in production=============== -->
+    <script>
+        let emp =[
+            {
+             namee:"Rajan kumar",
+             age:21,
+             statuss:"single",
+            },
+            {
+                namee:"Suraj kumar",
+                age:21,
+                statuss:"mingle",
+            },
+            {
+                namee:"Bittu kumar",
+                age:25,
+                statuss:"single",
+            },
+            {
+                namee:"Hariom kumar",
+                age:22,
+                statuss:"mingle",
+            }
+        ]
+        let a = emp.map((i)=>{return i})
+        console.log(a)
+        let p = emp.map((i)=>{return i.namee}) //print name
+        console.log(p)
+        let b  = emp.map((i)=>{return i.age}) //print age(value)
+        console.log(b)
+        let c = emp.map((i)=>{return i.statuss}) // print statuss
+        console.log(c)
+
+
+        emp.push({namee:"Raja",age:21,statuss:"single"}) //for push the array
+        console.log(emp)
+    </script>
+</body>
+</html>
