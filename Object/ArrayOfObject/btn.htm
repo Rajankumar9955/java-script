@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let raj;
+        raj=parseInt(prompt("Enter the number please:"))
+        let start,end;
+        if(raj<10000 && raj>999)
+            {
+                start = (Math.floor(raj/1000));
+                end = (Math.floor(raj%1000%100%10));
+                document.write("Sum is=", start+end);
+            }
+            else{
+                document.write("Enter the only four digit number!");
+            }
+    </script>
+</body>
+</html>

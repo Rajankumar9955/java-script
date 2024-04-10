@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center><h1>Student Name</h1></center>
+    <center><button onclick="fun()">Click me!</button></center>
+    <center><h1>student Age</h1></center>
+    <center><button onclick="fun1()">click me!</button></center>
+    <script>
+        let raj =[
+            {
+                sname:"Rajan kumar",
+                sage:20,
+                sroll:100,
+                location:"Bihar",
+            },
+            {
+                sname:"suraj kumar",
+                sage:21,
+                sroll:101,
+                location:"Bihar,sitamarhi",
+            },
+            {
+                sname:"Bittu kumar sah",
+                sage:22,
+                sroll:102,
+                location:"london",
+            },
+            {
+                sname:"Rahul kumar",
+                sage:19,
+                sroll:103,
+                location:"Purnea",
+            },
+            {
+                sname:"Hariom kumar",
+                sage:23,
+                sroll:588,
+                location:"Delhi",
+            },
+            {
+                sname:"subodh kumar",
+                sage:26,
+                sroll:455,
+                location:"Bhopal",
+            },
+            {
+                sname:"Raja Ram kumar",
+                sage:28,
+                sroll:121,
+                location:"surat",
+            }
+
+        ]
+        function fun()
+        {
+            let a = raj.map((i)=>{return i.sname})
+            console.log(a);
+        }
+        function fun1()
+        {
+              let b = raj.map((i)=>{return i.sage})
+              console.log(b);
+              let c = raj.filter((t)=>{return t.sage>22 && t.sage<26})
+              console.log(c)
+        }
+    </script>
+</body>
+</html>
