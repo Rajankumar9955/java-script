@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center><h1>Name of student</h1></center>
+    <center><button onclick="fun()">click me!</button></center>
+    <center><h1>Age of student</h1></center>
+    <center><button onclick="fun1()">Click me!</button></center>
+    <script>
+         let student = [
+            {
+                sname:"Rajan kumar",
+                sroll:101,
+                sage:21,
+                location:"bihar",
+            },
+            {
+                sname:"suraj",
+                sroll:102,
+                sage:22,
+                location:"bihar"
+            },
+            {
+                sname:"Hariom",
+                sroll:103,
+                sage:23,
+                location:"Bhopal",
+            },
+            {
+                sname:"sushil",
+                sroll:104,
+                sage:25,
+                location:"madhaya pradesh",
+            },
+            {
+                sname:"Rahul kumar",
+                sroll:105,
+                sage:20,
+                location:"bhopal",
+            },
+            {
+                sname:"Devansh",
+                sroll:106,
+                sage:26,
+                location:"bhopal",
+
+            }
+        ]
+        // let a=student.map((i)=>{return i.sname})
+        function fun()
+        {
+            student.forEach((i)=> console.log(i.sname));
+        }
+        function fun1()
+        {
+            student.forEach((i)=>console.log(i.sage));
+        }
+    </script>
+</body>
+</html>
