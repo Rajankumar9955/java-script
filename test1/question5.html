@@ -6,13 +6,58 @@
     <title>Document</title>
 </head>
 <body>
+    
+    <center><p id="time"></p></center>
+    <center><p id="date"></p></center>
+     <div>
+    <center><button onclick="fun()">Start</button></center>
+    <center><button onclick="fun1()">Stop</button></center>
+</div>
+    <style>
+        p{
+            /* margin-top: 20px; */
+            font-size: 50px;
+        }
+        div{
+            display: flex;
+            margin-left: 550px;
+        }
+        button{
+           
+            margin-top: 220px;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
     <script>
-         setInterval(()=>{
+       /* 
+       setInterval(()=>{
             let a = new Date ();
             let b= a.toLocaleTimeString();
             console.log(b)
-        },1000)
-        
+        },1000) 
+        */
+
+        let r = document.getElementById('time');
+        let s = document.getElementById('date')
+
+        function fun()
+        {
+            x=setInterval(() => {
+                let a = new Date();
+                let b=a.toLocaleTimeString();
+                let c=a.toLocaleDateString();
+                r.innerHTML=b;
+                s.innerHTML=c;
+            },1000);
+        }
+        function fun1()
+        {
+            setTimeout(() => {
+                clearInterval(x);
+            },);
+        }
+
     </script>
 </body>
 </html>

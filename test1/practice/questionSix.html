@@ -6,20 +6,22 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- enter any number print odd number cube through the array -->
     <script>
-        let a=parseInt(prompt("enter the array"))
-       let arr=[a]
-       for(let a=0; a<a; a++)
-       {
-        arr[a]=parseInt(prompt("enter the number"))
-       }
-       for(let b=0;b<a; ++b)
-       {
-        if(arr[b]%2!=0)
+      let v=parseInt(prompt("enter number"))
+      let raj=[v];
+      for(let a = 0;  a < v; ++a )
+      {
+        raj[a]=parseInt(prompt("Enter the array"))
+      }
+      for(let b=0; b<v; ++b)
+      {
+        if(raj[b]%2!=0)
         {
-            console.log(arr[b]*arr[b]*arr[b])
+            console.log(raj[b] * raj[b] * raj[b]);
         }
-       }
+      }
+    
     </script>
 </body>
 </html>
