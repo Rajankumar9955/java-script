@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <img src="./02.png" alt="" height="400px" width="400px" onmouseover="fun()">
+    <img src="image.png" alt="" height="400px" width="400px" onmouseover="fun1()">
+
+    <div>
+        <img src="./01.png" alt="" height="100%" width="50%" id="im">
+    </div>
+
+    <script>
+       let im = document.getElementById('im')
+function fun()
+{
+    im.src="02.png"
+}
+function fun1()
+{
+    im.src="image.png"
+}
+    </script>
+</body>
+</html>

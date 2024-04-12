@@ -6,17 +6,19 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <button onclick="obj.fun1()">even</button>
+    <center><button onclick="obj.fun()">click me!</button></center>
     <script>
-let obj = {
-    fun1:function(){
-        let a = parseInt(prompt("enter any no"));
-        if(a%2==0){
-            console.log(a," is even no")
+let obj={
+    fun:function()
+    {
+        let a=parseInt(prompt("enter any number:"));
+        if(a%2==0)
+        {
+            console.log(" even number:");
         }
-        else{
-            console.log(a,"is odd no");
+        else
+        {
+            console.log(" odd number:");
         }
     }
 }

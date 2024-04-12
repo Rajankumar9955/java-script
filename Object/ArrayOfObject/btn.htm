@@ -7,18 +7,32 @@
 </head>
 <body>
     <script>
-        let raj;
-        raj=parseInt(prompt("Enter the number please:"))
-        let start,end;
-        if(raj<10000 && raj>999)
-            {
-                start = (Math.floor(raj/1000));
-                end = (Math.floor(raj%1000%100%10));
-                document.write("Sum is=", start+end);
-            }
-            else{
-                document.write("Enter the only four digit number!");
-            }
+        // let raj;
+        // raj=parseInt(prompt("Enter the number please:"))
+        // let start,end;
+        // if(raj<10000 && raj>999)
+        //     {
+        //         start = (Math.floor(raj/1000));
+        //         end = (Math.floor(raj%1000%100%10));
+        //         document.write("Sum is=", start+end);
+        //     }
+        //     else{
+        //         document.write("Enter the only four digit number!");
+        //     }
+
+        
+       let raj;
+       raj=parseInt(prompt("Enter any number buddy"));
+       let start,end;
+       if(raj<10000 && raj>999)
+        {
+            start=(Math.floor(raj/1000));
+            end=(Math.floor(raj%1000%100%10));
+            console.log("starting number:-",start,"last number:-",end,"sum:-",start+end);
+        }
+        else{
+            console.log("Enter only four digit number!");
+        }
     </script>
 </body>
 </html>
