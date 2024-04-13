@@ -38,25 +38,25 @@
         },1000) 
         */
 
-        let r = document.getElementById('time');
-        let s = document.getElementById('date')
+     let time=document.getElementById('time')
+     let date=document.getElementById('date')
+     function fun()
+     {
+        x=setInterval(() => {
+            let a= new Date ();
+            let b=a.toLocaleTimeString();
+            let c=a.toLocaleDateString();
+            time.innerHTML=b;
+            date.innerHTML=c;
+        }, 1000);
+     }
+     function fun1()
+     {
+        setTimeout(() => {
+            clearInterval(x);
+        });
+     }
 
-        function fun()
-        {
-            x=setInterval(() => {
-                let a = new Date();
-                let b=a.toLocaleTimeString();
-                let c=a.toLocaleDateString();
-                r.innerHTML=b;
-                s.innerHTML=c;
-            },1000);
-        }
-        function fun1()
-        {
-            setTimeout(() => {
-                clearInterval(x);
-            },);
-        }
 
     </script>
 </body>

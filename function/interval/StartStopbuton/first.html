@@ -8,15 +8,31 @@
 <body> 
     <!----=================================html-============================================== -->
     <div >
-        <button id="btn1">START</button>
-        <button id="btn2">STOP</button>
+        <button id="btn1" onclick="fun()">START</button>
+        <button id="btn2" onclick="fun1()">STOP</button>
     </div>
 
 <!-- ------------------=================--Java-script --===========================----------- -->
 
     <script>
-
-
+        
+        function fun()
+        {
+            x=setInterval(() => {
+                let a=new Date();
+                let b=a.toLocaleTimeString();
+                let c=a.toLocaleDateString();
+                console.log(b);
+                console.log(c);
+            }, 1000);
+        }
+        function fun1()
+        {
+            setTimeout(() => {
+                clearInterval(x)
+            });
+        }
+           
 
 
     </script>

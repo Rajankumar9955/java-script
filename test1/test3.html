@@ -7,23 +7,23 @@
 </head>
 <body>
     
-    <img src="./02.png" alt="" height="400px" width="400px" onmouseover="fun()">
-    <img src="image.png" alt="" height="400px" width="400px" onmouseover="fun1()">
+<img src="02.png"  height="400px" width="400px" alt="" onmouseover="fun()">
+<img src="01.png"  height="400px" width="400px" onmouseover="fun1()">
 
-    <div>
-        <img src="./01.png" alt="" height="100%" width="50%" id="im">
-    </div>
+<div>
+    <img src="02.png" height="400px" width="800px" id="image">
+</div>
 
-    <script>
-       let im = document.getElementById('im')
-function fun()
-{
-    im.src="02.png"
-}
-function fun1()
-{
-    im.src="image.png"
-}
-    </script>
+<script>
+    let img=document.getElementById('image');
+    function fun()
+    {
+        img.src="02.png";
+    }
+    function fun1()
+    {
+        img.src="01.png";
+    }
+</script>
 </body>
 </html>
