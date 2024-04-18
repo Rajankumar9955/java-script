@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="Raj">
+   <center><h1>Browser Object Model(BOM)</h1></center> 
+   <center><h1>This page is going to pring</h1></center> 
+    <!-- funciton one -->
+    <center><button onclick="prt()">Print</button></center>
+
+    <center><h1>open Google</h1></center>
+    <!-- function two= -->
+    <center><button onclick="opn()">Open Google</button></center>
+
+    <center><h1>open google</h1></center>
+    <!-- functio three -->
+    <center><button onclick="op()">Open google</button></center>
+
+    <center><h1>close google</h1></center>
+    <center><button onclick="cls()">close googel</button></center>
+</div>
+<style>
+    #Raj
+    {
+        background-color: bisque;
+    }
+</style>
+    <script>
+        // window object hai 
+        // Print funtion hai
+        function prt()
+        {
+            window.print();
+        }
+
+        function opn()
+        {  
+            var m
+            m=window.open("https://www.google.com","_parent")
+        }
+        function cls()
+        {
+            m.close()
+        }
+         
+        function op()
+        {
+            window.open("https://google.com","_blank","width=500px","left=500px")
+        }
+    </script>
+</body>
+</html>
