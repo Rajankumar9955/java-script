@@ -26,3 +26,9 @@ function div()
     let ans=document.getElementById('ans');
     ans.innerHTML=a/b;
 }
+// function clr()
+// {
+//     setTimeout(() => {
+//         clearInterval(ans);
+//     });
+// }
