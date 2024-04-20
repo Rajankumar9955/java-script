@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" onsubmit="return validate();">
+    <input type="text" placeholder="enter the name please" id="name"><br>
+    <input type="text" placeholder="Enter the email" id="email"><br>
+    <input type="number" placeholder="enter the phone number" id="number"><br>
+    <input type="submit">
+    </form>
+    <script>
+         let name=document.getElementById('name').value;
+         let email=document.getElementById('email').value;
+         let phone=document.getElementById('phone').value;
+
+        function validate()
+        {
+         
+         if(name=="")
+         {
+            alert("Please enter the name please")
+            document.getElementById("name").focus()
+            return false
+         }
+         else if(email=="")
+         {
+            alert("please enter the email")
+            document.getElementById("email").focus()
+            return false
+         }
+         else if(phone=="")
+         {
+            alert("Please enter the phone")
+            document.getElementById("phone").focus()
+            return false
+         }
+        }
+    </script>
+</body>
+</html>

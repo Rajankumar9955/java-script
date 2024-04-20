@@ -7,18 +7,28 @@
 </head>
 <body>
     <script>
-        let a=parseInt(prompt("Enter the number"))
-        let raj=[a];
-        let start,end;
-        if(raj<10000 && raj>999)
-            {
-                start=(Math.floor(raj/1000));
-                end=(Math.floor(raj%1000%100%10));
-                console.log(start+end);
-            }
-        else{
-           console.log("Enter only 4 Digit");
-        }
-    </script> 
+        // let a=parseInt(prompt("Enter the number"))
+        // let raj=[a];
+        // let start,end;
+        // if(raj<10000 && raj>999)
+        //     {
+        //         start=(Math.floor(raj/1000));
+        //         end=(Math.floor(raj%1000%100%10));
+        //         console.log(start+end);
+        //     }
+        // else{
+        //    console.log("Enter only 4 Digit");
+        // }
+
+       let v=parseInt(prompt("Enter the number"))
+       let raj=[v];
+       let start,end;
+       if(raj<10000 && raj>999)
+       {
+        start=(Math.floor(raj/1000));
+        end=(Math.floor(raj%1000%100%10))
+        console.log(start+end)
+       }
+     </script> 
 </body>
 </html>
