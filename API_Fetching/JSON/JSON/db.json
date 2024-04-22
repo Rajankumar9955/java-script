@@ -10,6 +10,26 @@
             "id":2,
             "name":"Suraj",
             "city":"Sitamarhi"
+        },
+        {
+            "id":3,
+            "name":"vikash",
+            "city":"parsauni"
+        },
+        {
+            "id":4,
+            "name":"akash",
+            "city":"parsauni ward 07" 
+        },
+        {
+            "id":5,
+            "name":"bittu ",
+            "city":"gopal ganj"
+        },
+        {
+            "id":6,
+            "name":"Rahul",
+            "city":"Purnia"
         }
     ]
 }
