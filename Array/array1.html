@@ -7,20 +7,37 @@
 </head>
 <body>
     <script>
-       let r=[];
-       let sum=0;
-       for(let a =0; a<10; a++)
-       {
-        r[a]=parseInt(prompt("enter number"))
-       }
-       for(let i=0; i<10; i++)
-       {
-        if(r[i]%2!=0)
-        {
-            sum=sum+r[i];
-        }
-       }
-       console.log(sum)
+    //    let r=[];
+    //    let sum=0;
+    //    for(let a=0; a<10; a++)
+    //    {
+    //     r[a]=parseInt(prompt("enter number"))
+    //    }
+    //    for(let i=0; i<10; i++)
+    //    {
+    //     if(r[i]%2!=0)
+    //     {
+    //         sum=sum+r[i];
+    //     }
+    //    }
+    //    console.log(sum)
+
+    let arr=[];
+    let arr1=[];
+    for(let i=0; i<2;++i)
+    {
+        arr[i]=parseInt(prompt("enter the array"));
+    }
+    for(let i=0; i<2; ++i)
+    {
+        arr1[i]=parseInt(prompt("enter the second array"));
+    }
+    for(let i=0; i<2; ++i)
+    {
+      let sum=arr[i]+arr1[i];
+       console.log(sum);
+
+    }
 
     </script>
 </body>
