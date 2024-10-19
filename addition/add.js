@@ -5,5 +5,4 @@ function add(){
     let a = num1+num2;
 
    ans.innerHTML=a;
-
 }
