@@ -16,7 +16,6 @@
         <label for="">Enter confirm Password</label>
         <input type="text" placeholder="confirm Password" id="cpass"><br><br>
         <input type="submit">
-
 </form>
 <script>       
 function validate()
@@ -44,7 +43,7 @@ let cpass = document.getElementById('cpass').value;
         alert("please enter  only number");
         return false;
     }
-    else if(pass="")
+    else if(pass=="")
     {
         alert("please fill your password")
         document.getElementById("pass").focus();

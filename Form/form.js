@@ -7,15 +7,21 @@ let contact = document.getElementById('contact').value;
 let pass = document.getElementById('pass').value;
 let cpass = document.getElementById('cpass').value;
 
-    if(Name==" ")
+    if(Name=="")
     {
-        alert("please fill ur name ")
+        alert("please fill ur name");
         document.getElementById("Name").focus();
         return false;
     }
-    else if(contact.length <10  || contact.length>10)
+    else if(contact=="")
+     {
+        alert("Please enter contact number:");
+        document.getElementById("contact").focus();
+        return false;
+     }
+    else if(contact.length<10  || contact.length>10)
     {
-        alert("please enter your contact number in 10 digit")
+        alert("please enter your contact number in 10 digit");
         document.getElementById("contact").focus();
         return false;
     }
@@ -24,13 +30,13 @@ let cpass = document.getElementById('cpass').value;
         alert("please enter  only number");
         return false;
     }
-    else if(pass=" ")
+    else if(pass=="")
     {
-        alert("please fill your password")
+        alert("please fill your password");
         document.getElementById("pass").focus();
         return false;
     }
-    else if(cpass==" ")
+    else if(cpass=="")
     {
         alert("please fill confirm password")
         document.getElementById("cpass").focus();
