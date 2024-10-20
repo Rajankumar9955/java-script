@@ -9,9 +9,6 @@ function inc()
     s.innerHTML=v;
     r.innerHTML=v;
     a.innerHTML=v*300;
-
-
-
 }
 function dec()
 {    
